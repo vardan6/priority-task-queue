@@ -21,5 +21,5 @@ Interestingly the performance is about the same for all three cases.
 In the test demonstration, the tasks list of `NUM_TASKS` length is generated with random values defined in `tests/config.py`
 
 <span style="color:rgb(200, 200, 200)">
-Initially, I implemented this task based on `PriorityQueue`(from 'queue') Python library.
+Initially, I implemented this task based on `PriorityQueue`(from 'queue') Python library but then decided to do it in place.
 </span>
