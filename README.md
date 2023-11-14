@@ -20,7 +20,7 @@ Interestingly the performance is about the same for all three cases.
 
 The last bullet of the task can be considered as not complete because I haven't used the unit tests package for it, but I find the current testing approach better to demonstrate the functionality.
 
-In the test demonstration, the tasks list of `NUM_TASKS` length is generated with random values defined in `tests/config.py`
+In the test demonstration, the tasks list of `NUM_TASKS` length is generated with random values defined in [tests/config.py](./tests/config.py).
 
 <span style="color:rgb(200, 200, 200)">
 Initially, I implemented this task based on `PriorityQueue`(from 'queue') Python library but then decided to do it in place.
