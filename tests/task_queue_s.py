@@ -8,23 +8,6 @@ from src.task_queue_s import *
 from config import *
 
 
-# NUM_TASKS = 20000
-# NUM_TASKS = 1000
-# MIN_PRIORITY = 1
-# MAX_PRIORITY = 10
-# MIN_RAM = 4  # in GB
-# MAX_RAM = 16  # in GB
-# MIN_CPU_CORES = 1
-# MAX_CPU_CORES = 16
-# MIN_GPU_COUNT = 0
-# MAX_GPU_COUNT = 8
-
-# available_resources = Resources(
-#         MIN_RAM + 0.5*(MAX_RAM-MIN_RAM),
-#         int(MIN_CPU_CORES + 0.5*(MAX_CPU_CORES-MIN_CPU_CORES)),
-#         int(MIN_GPU_COUNT + 0.5*(MAX_GPU_COUNT-MIN_GPU_COUNT))
-#     )
-
 class TestTaskQueue():
     def __init__(self,numtasks=NUM_TASKS) -> None:
         self.num_tasks = numtasks
@@ -88,5 +71,4 @@ if __name__ == "__main__":
     # p.print_sum()
     p.get_tasks()
     # p.task_queue
-    # p.print_all_tasks()
-    pass
+    p.print_all_tasks()

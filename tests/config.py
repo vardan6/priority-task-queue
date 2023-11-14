@@ -6,7 +6,7 @@ from src.task_queue import *
 
 
 NUM_TASKS = 20000
-NUM_TASKS = 20000
+NUM_TASKS = 10000
 MIN_PRIORITY = 1
 MAX_PRIORITY = 10
 MIN_RAM = 4  # in GB
