@@ -7,15 +7,19 @@
 * Write a unit test to demonstrate the operation of the queue.
 
 ## Solution
-The TaskQueue class is implemented under: `src/task_queue.py`
-The test demonstration is done in the: `tests/task_queue.py`
+The TaskQueue class is implemented under: [src/task_queue.py](./src/task_queue.py)
+The test demonstration is done in the: [tests/task_queue.py](./tests/task_queue.py)
 
-Testsed few approaches to reside/add/get queue list:
- 1. `src/task_queue.py` Using Python builtin list: `add_task()` is sorting on add, `get_task()` uses del to delete returning item.
- 2. `src/task_queue_s.py` Using Python builtin list: `add_task()` is sorting after `list.append()`.
- 3. `src/task_queue_ll.py` Using LinkedList from structlinks installed by `pip3 install structlinks`
 
-The performance is about the same withing for all three cases
+Tested a few approaches to reside/add/get queue list:
+ 1. [src/task_queue.py](./src/task_queue.py) Using Python builtin list: `add_task()` is sorting on add, `get_task()` uses del to delete returning item.
+ 2. [src/task_queue_s.py](./src/task_queue_s.py) Using Python builtin list: `add_task()` is sorting after `list.append()`.
+ 3. [src/task_queue_ll.py](./src/task_queu_lle.py) Using `LinkedList` from `structlinks` installed by `pip3 install structlinks`
 
-In the test demonstration tasks list of `NUM_TASKS` lenght is generated with random values defined in `tests/config.py`
+Interestingly the performance is about the same for all three cases.
 
+In the test demonstration, the tasks list of `NUM_TASKS` length is generated with random values defined in `tests/config.py`
+
+<span style="color:rgb(200, 200, 200)">
+Initially, I implemented this task based on `PriorityQueue`(from 'queue') Python library.
+</span>
