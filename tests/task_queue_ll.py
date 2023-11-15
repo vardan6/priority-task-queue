@@ -4,7 +4,7 @@ import random
 
 sys.path.append(os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
 
-from src.task_queue_ll import *
+from src.task_queue_ll2 import *
 from config import *
 
 
@@ -62,13 +62,21 @@ class TestTaskQueue():
         # print("PP",self.task_queue.queue.pop())
 
 
+import time
+st = time.time()
 if __name__ == "__main__":
     # unittest.main()
     p = TestTaskQueue()
     p.generate_tasks()
+    it1 = time.time()
+    print("Tiem to generate tasks:", it1 - st)
     p.add_tasks()
+    it2 = time.time()
+    print("Tiem to add tasks:", it2 -it1)
     # p.print_task_queue()
     # p.print_sum()
     p.get_tasks()
+    it3 = time.time()
+    print("Tiem to get tasks:", it3 -it2)
     # p.task_queue
     p.print_all_tasks()

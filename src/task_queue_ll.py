@@ -24,18 +24,14 @@ class TaskQueue:
         self.queue = LinkedList.LinkedList()
 
     def add_task(self, task: Task):
-        if len(self.queue) == 0:
-            self.queue.append(task)
-            return
-        for i in range(len(self.queue)):
-            if task.priority < self.queue[i].priority:
+        for i, queue_task in enumerate(self.queue):
+            if task.priority < queue_task.priority:
                 self.queue.insert(i, task)
                 return
         self.queue.append(task)
 
     def get_task(self, available_resources: Resources) -> Task:
-        for i in range(len(self.queue)):
-            task = self.queue[i]
+        for i, task in enumerate(self.queue):
             # print("TT",task)
             if self.can_process(task.resources, available_resources):
                 self.queue.pop(i)
