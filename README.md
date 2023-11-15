@@ -7,14 +7,14 @@
 * Write a unit test to demonstrate the operation of the queue.
 
 ## Solution
-The TaskQueue class is implemented under: [src/task_queue.py](./src/task_queue.py)
-The test demonstration is done in the: [tests/task_queue.py](./tests/task_queue.py)
+The TaskQueue class is implemented under: [src/task_queue.py](./src/task_queue.py)</br>
+The test demonstration is done in the: [tests/task_queue.py](./tests/task_queue.py)</br>
 
 
 Tested a few approaches to reside/add/get queue list:
- 1. [src/task_queue.py](./src/task_queue.py) Using Python builtin list: `add_task()` is sorting on add, `get_task()` uses del to delete returning item.
- 2. [src/task_queue_s.py](./src/task_queue_s.py) Using Python builtin list: `add_task()` is sorting after `list.append()`.
- 3. [src/task_queue_ll.py](./src/task_queu_lle.py) Using `LinkedList` from `structlinks` installed by `pip3 install structlinks`
+ 1. [src/task_queue.py](./src/task_queue.py) Using Python builtin list: `add_task()` is sorting on add, `get_task()` uses del to delete returning item.</br>
+ 2. [src/task_queue_s.py](./src/task_queue_s.py) Using Python builtin list: `add_task()` is sorting after `list.append()`.</br>
+ 3. [src/task_queue_ll.py](./src/task_queu_lle.py) Using `LinkedList` from `structlinks` installed by `pip3 install structlinks`.</br>
 
 Interestingly the performance is about the same for all three cases.
 
